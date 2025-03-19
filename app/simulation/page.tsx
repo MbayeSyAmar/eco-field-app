@@ -106,26 +106,27 @@ export default function SimulationPage() {
                       <CardDescription>Adjust weather conditions to test field performance</CardDescription>
                     </CardHeader>
                     <CardContent className="grid gap-6">
-                      <div>
-                        <div className="mb-2 flex items-center justify-between">
-                          <Label htmlFor="ambient-temp">Ambient Temperature</Label>
-                          <div className="flex items-center gap-1 text-sm font-medium">
-                            <Thermometer className="h-4 w-4 text-orange-500" />
-                            28°C
-                          </div>
-                        </div>
-                        <Slider id="ambient-temp" defaultValue={[28]} max={40} min={15} step={1} />
-                      </div>
+  <div>
+    <div className="mb-2 flex items-center justify-between">
+      <Label htmlFor="ambient-temp">Ambient Temperature</Label>
+      <div className="flex items-center gap-1 text-sm font-medium">
+        <Thermometer className="h-4 w-4 text-orange-500" />
+        28°C
+      </div>
+    </div>
+    <Slider id="ambient-temp" defaultValue={[28]} max={40} min={15} step={1} />
+  </div>
 
-                      <div>
-                        <div className="mb-2 flex items-center justify-between">
-                          <Label htmlFor="humidity">Humidity</Label>
-                          <div className="flex items-center gap-1 text-sm font-medium">
-                            <Droplets className="h-4 w-4 text-blue-500" />
-                            65%
-                          </div>
-                        </Slider>
-                      </div>
+  <div>
+    <div className="mb-2 flex items-center justify-between">
+      <Label htmlFor="humidity">Humidity</Label>
+      <div className="flex items-center gap-1 text-sm font-medium">
+        <Droplets className="h-4 w-4 text-blue-500" />
+        65%
+      </div>
+    </div>
+    <Slider id="humidity" defaultValue={[65]} max={100} min={0} step={1} />
+  </div>
 
                       <div>
                         <div className="mb-2 flex items-center justify-between">
