@@ -173,7 +173,7 @@ export default function HomePage() {
                   <div className="rounded-full bg-blue-100 p-2 mb-2">
                     <Droplets className="h-5 w-5 text-blue-600" />
                   </div>
-                  <span className="text-xl font-bold">{donneesTerrain.niveauEau}%</span>
+                  <span className="text-xl font-bold">{donneesTerrain.niveauEau.toFixed(1)}%</span>
                   <span className="text-xs text-muted-foreground">Niveau d'eau</span>
                 </CardContent>
               </Card>
