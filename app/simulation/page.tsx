@@ -10,7 +10,7 @@ import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Thermometer, Droplets, Wind, Sun, Cloud, CloudRain } from "lucide-react"
 import FieldSimulation from "@/components/field-simulation"
-import React from "react";
+import React from "react"; // Ensure React is imported for JSX to work
 
 
 export default function SimulationPage() {
@@ -41,8 +41,7 @@ export default function SimulationPage() {
               <TabsTrigger value="advanced">Advanced Controls</TabsTrigger>
               <TabsTrigger value="comparison">Comparison View</TabsTrigger>
             </TabsList>
-          </Tabs>
-
+            
           <TabsContent value="basic" className="mt-0">
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
               <div className="mb-6">
@@ -643,6 +642,8 @@ export default function SimulationPage() {
               </div>
             </motion.div>
           </TabsContent>
+          </Tabs>
+
         </div>
       </div>
 

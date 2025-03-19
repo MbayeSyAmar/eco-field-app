@@ -274,7 +274,7 @@ export function ControleTerrain({ donnees, setDonnees }: ControlTerrainProps) {
           <h2 className="font-medium mb-3">Contrôle d'urgence</h2>
           <div className="flex justify-between">
             <Button variant="outline" className="w-[48%]">
-              Réinitialiser tous les systèmes
+              Réinitialiser
             </Button>
             <Button variant="destructive" className="w-[48%]">
               <Power className="h-4 w-4 mr-2" />
